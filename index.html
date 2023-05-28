@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nhóm 3 con gà</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/sForm.js"></script>
+<script src="js/jquery.jqtransform.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/audio.js"></script>
+<script>
+$(window).load(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'random',
+        pagination: false, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: true,
+        waitBannerAnimation: false,
+        progressBar: false
+    });
+    $("#tabs").tabs();
+    $().UItoTop({
+        easingType: 'easeOutQuart'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body class="page1">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><a href="index.html"><img src="images/logo1.jpg" alt=""></a></h1>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <nav>
+        <ul class="sf-menu">
+          <li class="current"><a href="index.html">Trang chủ</a></li>
+          <li class="with_ul"><a href="about.html">About</a>
+            <ul>
+              <li><a href="#">Agency</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Thư viện ảnh</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="contacts.html">Liên Hệ</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="clear"></div> -->
+    </div>
+    <!-- <div class="clear"></div> -->
+  </div>
+</header>
+<div class="main">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slider-relative"> <!--De chuyen anh muot hon-->
+        <div class="slider-block">
+          <div class="slider"> <a href="#" class="prev"></a><a href="#" class="next"></a>
+            <ul class="items">
+              <li><img src="images/slide4.jpg" alt="">
+                <div class="banner">
+                  <div>Thế giới có rất nhiều điều hay</div>
+                  <br>
+                  <span> Đang chờ chúng ta khám phá</span> </div>
+              </li>
+              <li><img src="" alt="images/slide1.jpg"></li>
+              <li><img src="images/slide2.jpg" alt=""></li>
+              <li><img src="images/slide3.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <h3>Những địa điểm du lịch hot nhất</h3>
+      </div>
+      <div class="boxes">
+        <div class="grid_4">
+          <figure>
+            <div><img src="images/page1_img1.jpg" alt=""></div>
+            <figcaption>
+              <h3>Venice</h3>
+              Đây là chỗ để nhập văn bản <a href="#" class="btn">Details</a> </figcaption>
+          </figure>
+        </div>
+        <div class="grid_4">
+          <figure>
+            <div><img src="images/page1_img7.jpg" alt=""></div>
+            <figcaption> <!-- Có nó mới tạo được cái xếp gấp ở top destination-->
+              <h3>Phú Quốc</h3>
+              Đây là chỗ để nhập văn bản <a href="#" class="btn">Details</a> </figcaption>
+          </figure>
+        </div>
+        <div class="grid_4">
+          <figure>
+            <div><img src="images/page1_img3.jpg" alt=""></div>
+            <figcaption>
+              <h3>Paris</h3>
+              Đây là chỗ để nhập văn bản <a href="#" class="btn">Details</a> </figcaption>
+          </figure>
+        </div>
+        <!-- <div class="grid_4">
+          <figure>
+            <div><img src="images/page1_img3.jpg" alt=""></div>
+            <figcaption>
+              <h3>Paris</h3>
+              Lorem ipsum dolor site geril amet, consectetur cing eliti. Suspendisse nulla leo mew dignissim eu velite a rew qw vehicula lacinia arcufasec ro. Aenean lacinia ucibusy fase tortor ut feugiat. Rabi tur oliti aliquam bibendum olor quis malesuadivamu. <a href="#" class="btn">Details</a> </figcaption>
+          </figure>
+        </div> -->
+        <div class="clear"></div> <!-- Không có cũng không sao tạm chưa biết dùng làm gì-->
+      </div>
+      <div class="grid_8">
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Gần đây</a></li>
+            <li><a href="#tabs-2">Thông tin nổi bật</a></li>
+            <li><a href="#tabs-3">Tất cả</a></li>
+          </ul>
+          <div class="clear"></div>
+          <div class="tab_cont" id="tabs-1"> <img src="images/page1_img4.jpg" alt="">
+            <div class="extra_wrapper">
+              <div class="text1">Chỗ nhập tiêu đề. </div>
+              <p class="style1"><a class="col2" href="#">Click here</a> Để biết THÊM THÔNG TIN NÈ </p>
+              Đây là chỗ để nhập văn bản <a href="#" class="btn">Thêm</a>
+              <div class="clear "></div>
+            </div>
+            <div class="clear cl1"></div>
+            <img src="images/page1_img6.jpg" alt="">
+            <div class="extra_wrapper">
+              <div class="text1 tx1">Chỗ nhập tiêu đề </div>
+              Đây là chỗ để nhập văn bản
+              <div class="clear"></div>
+              <a href="#" class="btn bt1">Thêm</a>
+              <div class="clear "></div>
+            </div>
+          </div>
+          <div class="tab_cont" id="tabs-2"> <img src="images/page1_img4.jpg" alt="">
+            <div class="extra_wrapper">
+              <div class="text1">Tiêu đề </div>
+              <p class="style1">Văn bản</p>
+             Văn bản <a href="#" class="btn">Thêm</a>
+              <div class="clear "></div>
+            </div>
+            <div class="clear cl1"></div>
+            <img src="images/page1_img5.jpg" alt="">
+            <div class="extra_wrapper">
+              <div class="text1">Tiêu đề </div>
+              <p class="style1">Văn bản</p>
+             Văn bản <a href="#" class="btn">Thêm</a>
+              <div class="clear "></div>
+            </div>
+          </div>
+          <div class="tab_cont" id="tabs-3"> <img src="images/page1_img4.jpg" alt="">
+            <div class="extra_wrapper">
+              <div class="text1">Chỗ nhập tiêu đề </div>
+              <p class="style1"><a class="col2" href="#">Click here </a>Để biết thêm thông tin</p>
+              Đây là chỗ để nhập văn bản <a href="#" class="btn">Thêm</a>
+              <div class="clear "></div>
+            </div>
+            <div class="clear cl1"></div>
+            <img src="images/page1_img5.jpg" alt="">
+            <div class="extra_wrapper">
+              <div class="text1 tx1">Chỗ nhập tiêu đề </div>
+              <p class="style1"><a class="col2" href="#">Click here </a>Để biết thêm thông tin</p>
+              Chỗ nhập văn bản
+              <div class="clear"></div>
+              <a href="#" class="btn bt1">Thêm</a>
+              <div class="clear "></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="newsletter_title">Thông tin </div>
+        <div class="n_container">
+          <form id="newsletter" action="#">
+            <div class="success">Email bạn gửi đã được đưa đi thành công</div>
+            <div class="text1">Điền email để chúng tôi gửi bạn thông tin mới nhất </div>
+            <label class="email">
+              <input type="email" value="email address" >
+              <span class="error">*Email bạn nhập không hợp lệ.</span> </label>
+            <div class="clear"></div>
+            <a href="#" class="" data-type="submit"></a>
+          </form>
+          <ul class="list">
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+            <li><a href="#">Tiêu đề  </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="bottom_block">
+    <div class="container_12">
+      <div class="grid_2 prefix_2">
+        <ul>
+          <li><a href="#">Những câu hỏi phổ biến</a></li>
+          <li><a href="#">Feedbacks của mọi người</a></li>
+        </ul>
+      </div>
+      <div class="grid_2">
+        <ul>
+          <li><a href="#">Trang tiện ích</a></li>
+          <li><a href="#">Hướng dẫn viên</a></li>
+        </ul>
+      </div>
+      <div class="grid_2">
+        <ul>
+          <li><a href="#">Bảo Hiểm</a></li>
+          <li><a href="#">Du lịch gia đình</a></li>
+        </ul>
+      </div>
+      <div class="grid_2">
+        <h4>Liên hệ với chúng tôi qua:</h4>
+        Số điện thoại: 123456789
+        <a href="#">binhan@gmail.com</a> </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      <div class="copy"> Công ty du lịch Bình An &copy; 2024 | <a href="#">Privacy Policy</a> | Mang sự trải nghiệm đến cho mọi người </div>
+
+      <!-- Muốn nhạc nền cho background website thì dùng ( Lưu ý rằng người truy cập sẽ không thể tắt được) -->
+      <audio autoplay id="baudio">
+        <source src="">
+      </audio>
+      
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+index.html
+
+Header Superfish + style 
+Background ngoài: Style thẻ body
+
+Font chữ trong class Banner phải import thêm font MTO-chancery
+@font-face {
+	font-family:'MTO Chancery';
+	src: url('D:\Source project_Anh_Nhac\Source_Yuki_Team\ToolMG\MTO Font Final\MTO Font\MTO Chancery.ttf');
+	/* Muốn dùng thì phải thay đổi url, đã kèm file ttf trong thư mục */
+
+} trong Slider.css thay đổi url font
+
+copy right bottom : style.css L1035
+
+L1035 ->1041
+
+Thông tin: từ L594
+
+
+Khung last minute - hot deals ở trong class grid_8 (Trong class content -> container_12)
++L546 style.css
++ l494 STYLE.CSS
